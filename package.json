@@ -1,0 +1,41 @@
+{
+	"name": "fmentor-single-price-karma-qunit",
+	"version": "1.0.0",
+	"description": "single price grid component using karma and qunit",
+	"main": "index.js",
+	"scripts": {
+		"sass-dev": "sass --watch scss/main.scss css/main.css",
+		"sass-prod": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+		"postcss": "postcss css/main.css -o css/main.css --use autoprefixer --no-map",
+		"prettier": "prettier --write .",
+		"dev": "run-s sass-dev",
+		"lint": "run-s prettier",
+		"test": "karma start",
+		"build": "run-s lint sass-prod postcss"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/al3xback/fmentor-single-price-karma-qunit.git"
+	},
+	"author": "alex <al3xback@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/al3xback/fmentor-single-price-karma-qunit/issues"
+	},
+	"homepage": "https://github.com/al3xback/fmentor-single-price-karma-qunit#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.16",
+		"karma": "^6.4.2",
+		"karma-chrome-launcher": "^3.2.0",
+		"karma-qunit": "^4.1.2",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0",
+		"prettier": "^2.8.8",
+		"qunit": "^2.20.0",
+		"sass": "^1.62.1"
+	},
+	"browserslist": [
+		"defaults"
+	]
+}
