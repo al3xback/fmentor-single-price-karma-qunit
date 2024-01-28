@@ -9,11 +9,11 @@ QUnit.module('DOM', (hooks) => {
 		document.body.removeChild(document.getElementById('wrapper'));
 	});
 
-	test('should have a string type of card mark content element', (assert) => {
-		const cardMarkContent =
-			document.querySelector('.card__mark').textContent;
+	test('should have a string type of card subtitle content element', (assert) => {
+		const cardSubtitleContent =
+			document.querySelector('.card__subtitle').textContent;
 
-		assert.equal(typeof cardMarkContent, 'string');
+		assert.equal(typeof cardSubtitleContent, 'string');
 	});
 
 	test("should have a title element that equals 'Join our community' word in first section element", (assert) => {
