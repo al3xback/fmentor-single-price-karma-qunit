@@ -1,8 +1,9 @@
 {
 	"name": "fmentor-single-price-karma-qunit",
+	"private": true,
 	"version": "1.0.0",
-	"description": "single price grid component using karma and qunit",
-	"main": "index.js",
+	"author": "alex <al3xback@gmail.com>",
+	"license": "ISC",
 	"scripts": {
 		"sass-dev": "sass --watch scss/main.scss css/main.css",
 		"sass-prod": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
@@ -13,16 +14,6 @@
 		"test": "karma start",
 		"build": "run-s lint sass-prod postcss"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/al3xback/fmentor-single-price-karma-qunit.git"
-	},
-	"author": "alex <al3xback@gmail.com>",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/al3xback/fmentor-single-price-karma-qunit/issues"
-	},
-	"homepage": "https://github.com/al3xback/fmentor-single-price-karma-qunit#readme",
 	"devDependencies": {
 		"autoprefixer": "^10.4.16",
 		"karma": "^6.4.2",
